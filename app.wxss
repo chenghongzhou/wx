@@ -1,0 +1,262 @@
+/**app.wxss**/
+body,view,input,a,div,ul,li,ol,p,span,i,image{
+  margin: 0rpx;
+  padding: 0rpx;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+} 
+.footer{
+  width: 100%;
+  height: 98rpx;
+  background: #f7f7fa;
+  border-top: 1px solid #eeeeef;
+  display: flex;
+  display: -webkit-flex;
+  position: fixed;
+  left: 0rpx;
+  right: 0rpx;
+  bottom: 0rpx;
+  z-index: 8;
+}
+.ftlist{
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+.firstpagecion{
+  display: block;
+  width: 52rpx;
+  height: 46rpx;
+  margin: 12rpx auto 0rpx;
+}
+.ftbs{
+  font-size: 24rpx;
+  color: #acacac;
+  width: 100%;
+  text-align: center;
+  margin-top: 4rpx;
+}
+.sendgopeople{
+  width: 88rpx;
+  height: 88rpx;
+  margin: 6rpx auto;
+}
+.searchmianbox{
+  width: 100%;
+  height: 80rpx;
+  background: #4e95de;
+  padding: 10rpx 26rpx;
+  position: relative;
+    display: flex;
+  display: -webkit-flex
+}
+.searchmain{
+  width: 65%;
+  height: 80rpx;
+  background: #fff;
+  min-height: 80rpx;
+  border-radius: 4px;
+  padding: 0px 10rpx 0px 60rpx;
+  font-size: 32rpx;
+  color: #333;
+}
+.sscion{
+  position: absolute;
+  left: 42rpx;
+  top: 34rpx;
+  width: 32rpx;
+  height: 32rpx;
+  z-index: 10;
+}
+.reachto{
+  width: 18%;
+  height: 80rpx;
+  background: #4b92dc;
+  font-size: 32rpx;
+  color: #fff;
+  margin-left: 20rpx;
+}
+.reachts{
+  width: 100%;
+  font-size: 32rpx;
+  color: #a9a9aa;
+  text-align: center;
+  margin: 80rpx auto;
+}
+.reachmore{
+  display: flex;
+  display: -webkit-flex;
+  width: 80%;
+  margin: 0px auto;
+}
+.reachlist{
+  font-size: 32rpx;
+  color: #7db7f2;
+  margin-left: 38rpx;
+}
+
+.mainnews{
+  width: 100%;
+  margin-top: 30rpx;
+  background: #fff;
+  padding-left: 26rpx;
+  position: relative;
+}
+.miannewstitle{
+  width: 100%;
+  height: 88rpx;
+  font-size: 36rpx;
+  color: #353535;
+  line-height: 88rpx;
+  font-weight: 500;
+  border-bottom: 1px solid #ebebeb;
+}
+.newscount{
+  width: 100%;
+  padding: 20rpx 0rpx;
+  display: -webkit-flex;
+  display: flex;
+  border-bottom: 1px solid #ebebeb;
+  position: relative
+}
+.newsctimg{
+  width: 184rpx;
+  height: 128rpx;
+  margin-right: 20rpx;
+}
+.newsctts{
+  padding-right: 26rpx;
+  position: relative;
+}
+.newstitle{
+  font-size: 30rpx;
+  color: #363636;
+  word-break: break-all;
+}
+.newsctauthor{
+  font-size: 26rpx;
+  color: #999999;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.newscttime{
+   font-size: 26rpx;
+  color: #999999;
+  position: absolute;
+  right: 26rpx;
+  bottom: 20rpx;
+}
+.thingscount{
+  padding: 30rpx 0px;
+  position: relative;
+  border-bottom: 1px solid #ebebeb;
+}
+.thingscount:last-child{
+  border: 0px;
+  margin-bottom: 98rpx;
+}
+.thingscttop{
+  display: flex;
+  display: -webkit-flex;
+}
+.whos{
+  width: 88rpx;
+  height: 88rpx;
+  margin-right: 20rpx;
+  flex:none;
+}
+.thingswhos{
+  padding-right:26rpx;
+
+}
+.whoname{
+  font-size: 26rpx;
+  color: #383838;
+  margin-bottom: 12rpx;
+}
+.whoposition{
+  font-size: 24rpx;
+  color: #9a9a9a;
+}
+.whoposition span{
+  color: #f2f2f2;
+  margin: 0px 4rpx;
+}
+.thingstime{
+  position: absolute;
+  top: 20rpx;
+  right: 26rpx;
+  color: #cacacf;
+  font-size: 24rpx;
+}
+.thingstitle{
+  font-size: 30rpx;
+  color:#383838; 
+  margin-top: 20rpx;
+}
+.thingsdetils{
+  font-size: 28rpx;
+  color: #9a9a9a;
+  word-break: break-all;
+  margin-top: 10rpx;
+}
+.thingsimgbox{
+  display: flex;
+  display: -webkit-flex;
+  margin-top: 20rpx;
+}
+.thingsimg{
+  width: 160rpx;
+  height: 160rpx;
+  margin-right: 10rpx;
+}
+.follow{
+  width: 122rpx;
+  height: 60rpx;
+  border:2rpx solid #fa8d35;
+  color: #fa8d35;
+  border-radius: 8rpx;
+  line-height: 64rpx;
+  text-align: center;
+  position: absolute;
+  right: 52rpx;
+  top: 13rpx;
+  font-size: 26rpx;
+}
+
+.swiper-tab {
+  width: 100%;
+  border-bottom: 1px solid #ededed;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.swiper-tab-list {
+  font-size: 16px;
+  display: inline-block;
+  width: 33.33%;
+  color: #333;
+}
+
+.on {
+  color: #8ac0f4;
+  border-bottom: 5rpx solid #8ac0f4;
+}
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}

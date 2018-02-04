@@ -1,0 +1,55 @@
+.news {
+  width: 100%;
+  height: 100%;
+}
+
+.news-panel {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 20rpx 0 5rpx 20rpx;
+}
+
+.news-item {
+  display: flex;
+  height: 160rpx;
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ededed;
+}
+
+.news-item .items {
+  height: 160rpx;
+  padding-bottom: 20rpx;
+  box-sizing: border-box;
+}
+
+.news-item .item-left {
+  flex: 1;
+}
+
+.news-item .item-right {
+  flex: 2;
+  padding: 0 10rpx 20rpx 20rpx;
+}
+
+.item-right text {
+  font-size: 32rpx;
+}
+
+.item-right .descript {
+  display: block;
+  height: 100rpx;
+}
+
+.it-tips {
+  color: #666;
+  line-height: 60rpx;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-right: 10rpx;
+}
+
+.it-tips .timer {
+  float: right;
+}

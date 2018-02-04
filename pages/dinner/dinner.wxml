@@ -1,0 +1,38 @@
+<!--饭局-->
+
+
+
+<view style='widh:100%;overflow:hidden;'>
+<view class='projecttopbox'>
+  <view class='projecttype'>
+  全部
+  <image src='http://pic.iidingyun.com/file/2005/xlxx@3x.png' class='projectselect'></image>
+  </view>
+  <view class='projecttype'>全部时间
+    <image src='http://pic.iidingyun.com/file/2005/xlxx@3x.png' class='projectselect'></image>
+  </view>
+   <view class='projecttype'>全部地区
+    <image src='http://pic.iidingyun.com/file/2005/xlxx@3x.png' class='projectselect'></image>
+  </view>
+</view>
+  <view class='c-b2'>
+    <view wx:for="{{arrlists}}"  wx:key="{{index}}" data-index="{{index}}" bindtap='goto_other' class='c-b2-arr'>
+      <view class='c-b2-big'>
+        <view class='c-b2-l'>{{item.label}}</view>
+        <view class='c-b2-r'>
+          <view style='font-size:32rpx;margin-top:4rpx;'>{{item.title}}</view>
+          <view>
+            <i class="ico-a"></i>
+            <text class='c-b2-t'>{{item.address}}</text>
+            <i class="ico-b"></i>
+            <text class='c-b2-t'>{{item.time}}{{item.times}}</text>
+            <i class="ico-c"></i>
+            <text class='c-b2-t'>{{item.num}}</text>
+            <i class="ico-d"></i>
+            <text class='c-b2-t'>{{item.people}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  </view>

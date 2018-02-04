@@ -1,0 +1,16 @@
+<!--发布-->
+<view class='fb-box'>
+   <view class='fb'>
+  </view> 
+  <view>
+     <view class='c-b'>
+      <view wx:for="{{arrlist}}" wx:key="{{index}}" class='c-b1'>
+        <image src='{{item.url}}'></image>
+        <text>{{item.txt}}</text>
+      </view>
+    </view> 
+    <view class='close' bindtap='back'>
+      <image src='http://pic.iidingyun.com/file/2005/x@3x.png'></image>
+    </view>
+  </view>
+</view>

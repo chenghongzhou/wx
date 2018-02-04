@@ -1,0 +1,34 @@
+<!--文件模板-->
+<template name="footer">
+  <view class='footer'>
+    <view class='ftlist'>
+      <image src='../../static/img/index3.png' class='firstpagecion'></image>
+      <view class="ftbs">首页</view>
+    </view>
+    <view class='ftlist'>
+      <image src='../../static/img/pc3.png' class='firstpagecion'></image>
+      <view class="ftbs" style='margin-left:-4rpx;'>人脉圈</view>
+    </view>
+    <view class='ftlist'>
+      <image src='../../static/img/sendto.png' class='sendgopeople'></image>
+    </view>
+    <view class='ftlist'>
+      <image src='../../static/img/information.png' class='firstpagecion'></image>
+      <view class="ftbs">消息</view>
+    </view>
+    <view class='ftlist'>
+      <image src='../../static/img/me.png' class='firstpagecion' width="28rpx" height="28rpx"></image>
+      <view class="ftbs">我</view>
+    </view>
+  </view>
+</template>
+
+<template name="search">
+<view class='ssbox' style='z-index:3'>
+  <view class='searchmianbox'>
+    <input value='' name='' class='searchmain' type='text' placeholder='搜索' />
+    <image src='http://pic.iidingyun.com/file/2005/ssicon @3x.png' class='sscion'></image>
+    <button class='reachto'>搜索</button>
+  </view>
+</view>
+</template>

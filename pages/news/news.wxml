@@ -1,0 +1,64 @@
+<!--新闻要闻-->
+<view class="news">
+  <tab title="{{title}}">
+    <!--时政要闻-->
+    <view slot="first">
+      <scroll-view scroll-y style="height:{{winHeight - 31}}px;">
+        <view class="news-panel">
+          <view class="news-item" wx:for="{{politicsNew}}" wx:key="{{index}}" bindtap='gotoDetails'>
+            <view class="items item-left">
+              <image src="{{item.url}}" mode="aspectFit" style="width:100%;height:100%"></image>
+            </view>
+            <view class="items item-right">
+              <text class="descript">{{item.title}}--{{index+1}}</text>
+              <view class="it-tips">
+                <text class="name">{{item.name}}</text>
+                <text class="timer">{{item.time}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+
+    <!--全连要闻-->
+    <view slot="second">
+      <scroll-view scroll-y style="height:{{winHeight - 31}}px;">
+        <view class="news-panel">
+          <view class="news-item" wx:for="{{completeNews}}" wx:key="{{index}}">
+            <view class="items item-left">
+              <image src="{{item.url}}" mode="aspectFit" style="width:100%;height:100%"></image>
+            </view>
+            <view class="items item-right">
+              <text class="descript">{{item.title}}--{{index+1}}</text>
+              <view class="it-tips">
+                <text class="name">{{item.name}}</text>
+                <text class="timer">{{item.time}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+
+    <!--非公要闻-->
+    <view slot="third">
+      <scroll-view scroll-y style="height:{{winHeight - 31}}px;">
+        <view class="news-panel">
+          <view class="news-item" wx:for="{{noePublicNews}}" wx:key="{{index}}">
+            <view class="items item-left">
+              <image src="{{item.url}}" mode="aspectFit" style="width:100%;height:100%"></image>
+            </view>
+            <view class="items item-right">
+              <text class="descript">{{item.title}}--{{index+1}}</text>
+              <view class="it-tips">
+                <text class="name">{{item.name}}</text>
+                <text class="timer">{{item.time}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </tab>
+</view>

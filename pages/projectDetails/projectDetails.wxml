@@ -1,0 +1,87 @@
+<!--项目详情-->
+<view class="projectbox">
+  <view class='projecmian'>
+    <view class='projecttitle'>发布人</view>
+  </view>
+   <view class='mainnews' style='margin-top:0rpx;'>
+
+  <view class='thingscount' style='margin-bottom:0px'>
+    <view class='thingscttop' style='position:relative;'>
+      <image src='{{users.url}}' class='whos'></image>
+      <view class='thingswhos' style='dispaly:flex;display:-webkit-flex;'>
+      <view>
+          <view class="whoname">{{users.user}}</view>
+          <view class="whoposition">{{users.position}} <span>|</span> {{users.company}}</view>
+        </view>
+        <view class='follow'>+ 关注</view>
+      </view>
+    </view>
+  </view>
+
+  </view>
+  <view class='projecmian' style='margin-top:30rpx;'>
+    <view class='projecttitle'>项目概况</view>
+    <view class='peojecttype'>
+      <view class='pt_name'>项目名称</view>
+      <view class='pt_ms'>{{users.theme}}</view>
+    </view>
+    <view class='peojecttype'>
+      <view class='pt_name'><span style="margin-right:60rpx;">描</span><span style="margin-right:40rpx;">述</span></view>
+      <view class='pt_ms'>{{users.describe}}</view>
+    </view>
+    <view class='peojecttype'>
+      <view class='pt_name'>所属行业</view>
+      <view class='pt_ms'>{{users.types}}</view>
+    </view>
+    <view class='peojecttype'>
+      <view class='pt_name'>发起公司</view>
+      <view class='pt_ms'>{{users.sendcompany}}</view>
+    </view>
+    <view class='peojecttype'>
+      <view class='pt_name'>项目地址</view>
+      <view class='pt_ms'>{{users.address}}<image src='http://pic.iidingyun.com/file/2005/dw@3x.png' class='positioncion'></image></view>
+    </view>
+  </view>
+
+  <view class='projecmian' style='margin-top:30rpx;'>
+    <view class='projecttitle'>合作机会</view>
+    <view class='peojecttype' style='color:#333;border:0px;font-size:28rpx;'>{{users.change}}</view>
+  </view>
+
+<view class='projecmian' style='margin-top:30rpx;'>
+    <view class='projecttitle'>项目详情</view>
+    <view class='peojectdetails'  style='margin-top:20rpx;'>
+      <view class='pj_tltie'>一、项目说明</view>
+      <view class='pj_tltie'>{{users.explain}}</view>
+    </view>
+
+    <view class='peojectdetails'>
+      <view class='pj_tltie'>二、行业市场分析</view>
+      <block wx:for="{{users.analysis}}" wx:key="id">
+        <view class='pj_tltie'>{{index+1}}，{{item}}</view>
+      </block>
+    </view>
+
+    <view class='peojectdetails'>
+      <view class='pj_tltie'>三、项目开发和建设实施计划</view>
+      <block wx:for="{{users.plan}}" wx:key="id">
+        <view class='pj_tltie'>{{index+1}}，{{item}}</view>
+      </block>
+    </view>
+
+    <view class='peojectdetails'>
+      <view class='pj_tltie'>四、项目可能形成的产业规模和市场前景</view>
+       <block wx:for="{{users.prospect}}" wx:key="id">
+        <view class='pj_tltie'>{{index+1}}，{{item}}</view>
+        </block>
+    </view>
+
+</view>
+
+<view class='talkbox'>
+  <view class='talkbnt'>
+    <image src='http://pic.iidingyun.com/file/2005/lt@3x.png' class='talkcion'></image>
+    聊一聊
+  </view>
+</view>
+</view>

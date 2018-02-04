@@ -1,0 +1,52 @@
+<!--观点详情-->
+<view style='widh:100%;overflow:hidden;height:100%;background:#efeff4'>
+  <view class='mainnews' style='margin-top:0rpx;border-bottom:1px solid #f2f2f2;background:#fff'>
+    <view class='thingscount' bindtap='goprojectdetail' style="margin-bottom:0px;">
+      <view class='thingscttop'>
+        <image src='{{things.url}}' class='whos'></image>
+        <view class='thingswhos'>
+          <view class="whoname">{{things.name}}</view>
+          <view class="whoposition">{{things.position}}
+            <span>|</span> {{things.company}}</view>
+          <p class="thingstime" style="right:46rpx;top:34rpx;">{{things.time}}</p>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view style='padding:30rpx 26rpx 50rpx 26rpx;background:#fff;position:relative;'>
+    <view class='textbox'>{{things.text}}</view>
+    <image src='{{things.bigimg}}' class='bigimg'></image>
+    <view class='message'>
+      <i></i>{{things.message}}</view>
+    <view class='seebox'>
+      <i></i>{{things.see}}</view>
+  </view>
+
+  <view style='margin-top:30rpx;'>
+    <block wx:for="{{things.lists}}" wx:key="id">
+      <view class='mainnews' style='border-bottom:1px solid #f2f2f2;background:#fff;margin-top:0px'>
+        <view class='thingscount' bindtap='goprojectdetail' style="margin-bottom:0px;">
+          <view class='thingscttop'>
+            <image src='{{item.url}}' class='whos'></image>
+            <view class='thingswhos'>
+              <view class="whoname">{{item.name}}</view>
+              <view class="whoposition">{{item.position}}
+                <span>|</span> {{item.company}}</view>
+              <p class="thingstime" style="right:46rpx;top:34rpx;">{{things.time}}</p>
+
+            </view>
+          </view>
+          <view class='vpzy'>{{item.ifo}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+
+  <view class='sendbox'>
+    <image src='http://pic.iidingyun.com/file/2005/bq@3x.png' class='qqcions'></image>
+    <input type='text' placeholder='我来说两句' class='speakbox' />
+    <view class='sendbtnbom'>发布</view>
+  </view>
+</view>

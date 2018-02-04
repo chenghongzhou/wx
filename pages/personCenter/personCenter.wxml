@@ -1,0 +1,107 @@
+<!--个人中心-->
+<view>
+  <view class='p-center' id="p-center">
+    <image src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2639088341,2223755776&fm=27&gp=0.jpg" class='hd-img'></image>
+    <view class='name-info'>
+      <text>张三</text>
+      <image src='http://pic.iidingyun.com/file/2005/n@3x.png' class='img'></image>
+    </view>
+    <view class='tips'>
+      中华全国工商业联合会
+      <text>会员</text>
+    </view>
+    <view class='tips'>没有完不成的任务，只有失去信心的自己。</view>
+    <view class='label'>
+      <view class='l-item'>关注
+        <i>18</i>
+      </view>
+      <view class='l-item'>粉丝
+        <i>18</i>
+      </view>
+    </view>
+  </view>
+
+  <view class='tab-per'>
+    <tab title="{{title}}" isModel="-100">
+      <view slot="first">
+        <view class='title'>
+          <view class='t-t'>
+            <image src='http://pic.iidingyun.com/file/2005/jbxx@3x.png' style='width:24px;height:24px;'></image>
+            <text>基本信息</text>
+          </view>
+          <view class='t-t'>
+            <text class='txt'>关注行业</text>
+            <span>互联网</span>
+            <span>物流</span>
+          </view>
+          <view class='t-t'>
+            <text class='txt'>爱　　好</text>
+            <span>篮球</span>
+            <span>足球</span>
+          </view>
+          <view class='t-t'>
+            <text class='txt'>常驻城市</text>
+            <span>广东</span>
+            <span>深圳</span>
+          </view>
+        </view>
+
+        <view class='mgt'></view>
+        <view class='title'>
+          <view class='t-t'>
+            <image src='http://pic.iidingyun.com/file/2005/sf@3x.png' style='width:24px;height:24px;'></image>
+            <text>身份</text>
+          </view>
+          <view class='t-t t-sf'>
+            <view>中华全国工商业联合会</view>
+            <view class='label'>
+              <text class='l-l'>董事长</text>
+            </view>
+          </view>
+
+          <view class='t-t t-sf'>
+            <view>北京中能科技有限公司</view>
+            <view class='label'>
+              <text class='l-l'>董事长</text>
+              <text class='l-r'>互联网/餐饮</text>
+            </view>
+          </view>
+
+          <view class='t-t t-sf'>
+            <view>北京中能科技有限公司</view>
+            <view class='label'>
+              <text class='l-l'>董事长</text>
+              <text class='l-r'>互联网/餐饮</text>
+            </view>
+          </view>
+
+        </view>
+
+        <view class='mgt'></view>
+        <view class='title'>
+          <view class='t-t'>
+            <image src='http://pic.iidingyun.com/file/2005/grry@3x.png' style='width:24px;height:24px;'></image>
+            <text>个人荣誉</text>
+          </view>
+          <view class='t-t'>
+            <span>全国优秀青年</span>
+          </view>
+        </view>
+        <view class='mgt'></view>
+      </view>
+      <view slot="second">项目</view>
+      <view slot="third">观点</view>
+    </tab>
+  </view>
+
+  <view class='btns'>
+    <view class='b-l' style=''>
+      <view>
+        聊天
+      </view>
+    </view>
+    <view class='b-r'>
+      <view>+ 关注</view>
+    </view>
+  </view>
+</view>

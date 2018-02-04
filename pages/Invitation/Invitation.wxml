@@ -1,0 +1,45 @@
+<!--邀请-->
+<view style='width:100%;overflow:hidden;'>
+  <!-- <slot name="third">3</slot> -->
+  <view class='mainnews' style='margin-top:0rpx;'>
+    <block wx:for="{{lists}}" wx:key="id">
+      <view class='thingscount' style='display:flex;display:-webkit-flex;'>
+        <view wx:if="{{item.isFree==true}}">
+          <view class='eares'>
+            <i class="earecion"></i>{{item.eare}}</view>
+        </view>
+        <view class='checkyq'>
+          <view bindtap='checkIs' class="{{item.isChecked?'checkqq':'checkedqq'}}" id="{{index}}"></view>
+        </view>
+        <view class='thingscttop' style='position:relative;'>
+          <image src='{{item.url}}' class='whos'></image>
+          <view class='thingswhos' style='dispaly:flex;display:-webkit-flex;'>
+            <view>
+              <view class="whoname" style='display:flex;display:-webkit-flex;'>
+                <view>{{item.name}}</view>
+                <view wx:if="{{item.isFree==true}}">
+                  <span class="free"></span>
+                  <span class="freets">有空</span>
+                </view>
+                <view wx:else>
+                  <span class="nofree"></span>
+                  <span class="freets">忙碌</span>
+                </view>
+              </view>
+              <view class="whoposition">{{item.position}}
+                <span>|</span> {{item.company}}</view>
+            </view>
+            <!-- <view class='follow'>+ 关注</view> -->
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+
+  <view class='inboms'>
+    <view class='inbsts'>您还能邀请
+      <span style="color:#fa8d35">5</span>人</view>
+    <view class='inbsbtn'>邀请</view>
+  </view>
+</view>

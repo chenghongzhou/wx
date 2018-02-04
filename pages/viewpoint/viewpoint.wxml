@@ -1,0 +1,24 @@
+<!--观点-->
+<view style='widh:100%;overflow:hidden;'>
+  <view class='mainnews' style='margin-top:0rpx;'>
+    <block wx:for="{{things}}" wx:key="id">
+      <view class='thingscount' bindtap='goprojectdetail' bindtap="goviewDetail">
+        <view class='thingscttop'>
+          <image src='{{item.url}}' class='whos'></image>
+          <view class='thingswhos'>
+            <view class="whoname">{{item.name}}</view>
+            <view class="whoposition">{{item.position}}
+              <span>|</span> {{item.company}}</view>
+            <p class="thingstime" style="right:46rpx">{{item.time}}</p>
+
+            <view class='thingstitle'>{{item.text}}</view>
+            <!-- <view class='thingsdetils'>{{item.text}}</view> -->
+            <view class='thingsimgbox'>
+              <image src='{{item.url}}' class='thingsimg' wx:for="{{item.imgUlr}}" wx:for-item="imgUlr" wx:key="id"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

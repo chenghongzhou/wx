@@ -1,0 +1,238 @@
+/**index.wxss**/
+.topsearch{
+  width: 100%;
+  height: 110rpx;
+  background: #4e95de;
+  overflow: hidden;
+  position: absolute;
+  z-index: 4;
+}
+.container{
+  background: #efeff4;
+}
+.search{
+  width: 90%;
+  height: 80rpx;
+  background: #fff;
+  min-height: 80rpx;
+  margin: 15rpx auto;
+  border-radius: 4px;
+  padding: 0px 10rpx;
+  font-size: 30rpx;
+  color: #ccc;
+  line-height: 80rpx;
+}
+.seachcenter{
+  margin: 0 auto;
+  width: 20%;
+  text-align: center;
+}
+.seachcenter image{
+  width: 32rpx;
+  height: 32rpx;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6rpx;
+  position: relative;
+  top: -2rpx;
+}
+.swiperbox{
+  width: 100%;
+  height: 440rpx;
+}
+.swiperbox swiper-item image{
+  width: 100%;
+  height: 100%;
+}
+.swiperbox .wx-swiper-dot{
+  background: #bbbcbe;
+}
+.swiperbox .wx-swiper-dot-active{
+  background: #4b92dc;
+}
+.swiperbox .wx-swiper-dots-horizontal{
+  bottom: 78rpx;
+}
+.bannerfloat{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 88rpx;
+  z-index: 3;
+  font-size:32rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 88rpx;
+}
+.bannerfloat image{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+}
+.bannertext{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  z-index: 4;
+}
+.mainnews{
+  width: 100%;
+  margin-top: 30rpx;
+  background: #fff;
+  padding-left: 26rpx;
+  position: relative;
+}
+.miannewstitle{
+  width: 100%;
+  height: 88rpx;
+  font-size: 36rpx;
+  color: #353535;
+  line-height: 88rpx;
+  font-weight: 500;
+  border-bottom: 1px solid #ebebeb;
+}
+.newcion{
+  display: inline-block;
+  vertical-align: middle;
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 10rpx;
+  background: url('http://pic.iidingyun.com/file/2005/xw@3x.png') no-repeat center;
+  background-size:contain;
+}
+.mainnewsmore{
+  position: absolute;
+  right:26rpx;
+  font-size: 28rpx;
+  color: #ceced2;
+}
+.mainnewsmorecion{
+    display: inline-block;
+    width: 16rpx;
+    height: 25rpx;
+  vertical-align: middle;
+  position: relative;
+  top: -2rpx;
+  margin-left: 8rpx;
+   background: url('http://pic.iidingyun.com/file/2005/gd@3x.png') no-repeat center;
+  background-size:contain; 
+}
+.newscount{
+  width: 100%;
+  padding: 20rpx 0px;
+  display: -webkit-flex;
+  display: flex;
+  border-bottom: 1px solid #ebebeb;
+  position: relative
+}
+.newsctimg{
+  width: 184rpx;
+  height: 128rpx;
+  margin-right: 20rpx;
+}
+.newsctts{
+  padding-right: 26rpx;
+  position: relative;
+}
+.newstitle{
+  font-size: 30rpx;
+  color: #363636;
+  word-break: break-all;
+}
+.newsctauthor{
+  font-size: 26rpx;
+  color: #999999;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.newscttime{
+   font-size: 26rpx;
+  color: #999999;
+  position: absolute;
+  right: 26rpx;
+  bottom: 20rpx;
+}
+
+.thingscion{
+   width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10rpx;
+    background: url('http://pic.iidingyun.com/file/2005/xm@3x.png') no-repeat center;
+  background-size:contain;  
+}
+
+.ssbox{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: #fff;
+  width: 100%;
+  height:100%;
+  z-index: 9;
+  background: #efeff4;
+}
+.hide{
+  display: none
+}
+.searchmianbox{
+  width: 100%;
+  height: 80rpx;
+  background: #60a3e8;
+  padding: 10rpx 26rpx;
+  position: relative;
+    display: flex;
+  display: -webkit-flex
+}
+.searchmain{
+  width: 65%;
+  height: 80rpx;
+  background: #fff;
+  min-height: 80rpx;
+  border-radius: 4px;
+  padding: 0px 10rpx 0px 60rpx;
+  font-size: 32rpx;
+  color: #333;
+}
+.sscion{
+  position: absolute;
+  left: 42rpx;
+  top: 34rpx;
+  width: 32rpx;
+  height: 32rpx;
+  z-index: 10;
+}
+.reachto{
+  width: 18%;
+  height: 80rpx;
+  background: #4b92dc;
+  font-size: 32rpx;
+  color: #fff;
+  margin-left: 20rpx;
+}
+.reachts{
+  width: 100%;
+  font-size: 32rpx;
+  color: #a9a9aa;
+  text-align: center;
+  margin: 80rpx auto;
+}
+.reachmore{
+  display: flex;
+  display: -webkit-flex;
+  width: 80%;
+  margin: 0px auto;
+}
+.reachlist{
+  font-size: 32rpx;
+  color: #7db7f2;
+  margin-left: 38rpx;
+}

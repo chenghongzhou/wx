@@ -1,0 +1,102 @@
+<!--发起人-->
+<view class='content'>
+  <view class='box1'>
+    <view class='box1-t'>发起人</view>
+    <view class='box1-b' wx:for="{{arrlist}}" wx:key="{{index}}">
+      <view class='box1-b-l'>
+        <image src='{{item.url}}'></image>
+      </view>
+      <view class='box1-b-c'>
+        <view>{{item.name}}</view>
+        <view>
+          <text>{{item.title}}</text>
+          <text>|</text>
+          <text>{{item.company}}</text>
+        </view>
+      </view>
+      <view class='box1-b-d'>
+        <a>+ 关注</a>
+      </view>
+    </view>
+  </view>
+  <view class='box2'>
+    <view class='box1-t'>局信息</view>
+    <view class='box2-d' wx:for="{{arrdata}}" wx:key="{{index}}">
+      <view>
+        <label>主题</label>
+        <text>{{item.title}}</text>
+      </view>
+      <view>
+        <label>类型</label>
+        <text>{{item.type}}</text>
+      </view>
+      <view>
+        <label>规格</label>
+        <text>{{item.num}}</text>
+      </view>
+      <view>
+        <label>时间</label>
+        <text>{{item.time}}</text>
+      </view>
+      <view>
+        <label>地区</label>
+        <text>{{item.address}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='box3'>
+    <view class='box1-t'>已加入
+      <label>
+        <text>3</text>
+        <text>/8</text>
+      </label>
+      <label class='add-c' bindtap='invitation'>去邀请</label>
+    </view>
+    <view class='box3-d'>
+      <view class='box3-box'>
+        <scroll-view scroll-x="true" style="width:100%; white-space: nowrap; display: flex">
+          <view class='box3-img-x'>
+            <view class='box3-img' wx:for="{{imglist}}" wx:key="{{index}}">
+              <image src="{{item.url}}"></image>
+            </view>
+            <view class='box3-img'>
+              <image src="/static/img/yn.png"></image>
+            </view>
+            <view class='box3-img'>
+              <image src="/static/img/yn.png"></image>
+            </view>
+            <view class='box3-img'>
+              <image src="/static/img/yn.png"></image>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+
+  <view class='box1' style="margin-top:30rpx;">
+    <view class='box1-t'>申请加入</view>
+    <view class='box1-b' wx:for="{{arrlist}}" wx:key="{{index}}">
+      <view class='box1-b-l'>
+        <image src='{{item.url}}'></image>
+      </view>
+      <view class='box1-b-c'>
+        <view>{{item.name}}</view>
+        <view>
+          <text>{{item.title}}</text>
+          <text>|</text>
+          <text>{{item.company}}</text>
+        </view>
+      </view>
+      <view class='box1-b-d2'>
+        <a>接受申请</a>
+      </view>
+    </view>
+
+  </view>
+  <view class='box-b'></view>
+  <view class='box4'>
+    <button>进入群聊</button>
+    <button>找客服定位</button>
+  </view>
+</view>

@@ -1,0 +1,149 @@
+/* pages/me/me.wxss */
+.card{
+  width:100%;
+  /* padding: 20rpx 0 20rpx 0;   */
+  height:480rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center
+ 
+}
+.card image {
+  height: 414rpx; 
+}
+.me-panel {
+  width: 100%;
+  height: 226rpx;
+  background: #fff;
+}
+
+.me-header {
+  width: 100%;
+  height: 136rpx;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+}
+
+.mh {
+  flex: 1;
+  line-height: 136rpx;
+  text-align: center;
+}
+
+.img {
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 20rpx;
+}
+
+.mh-center {
+  text-align: left;
+  flex: 3;
+  line-height: none;
+}
+
+.name, .state {
+  box-sizing: border-box;
+  line-height: 68rpx;
+}
+
+.name {
+  font-size: 34rpx;
+  color: #333;
+}
+
+.state {
+  font-size: 28rpx;
+  color: #999;
+}
+
+.dottad {
+  width: 16rpx;
+  height: 16rpx;
+  display: inline-block;
+  border-radius: 16rpx;
+  margin-right: 10rpx;
+  background: #2ec6a4;
+}
+
+.mh-right {
+  flex: 0.3;
+}
+
+page {
+  display: block;
+  min-height: 100%;
+  background-color: #efeff4;
+}
+
+.infos {
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  font-size: 28rpx;
+}
+
+.infos .item {
+  flex: 1;
+  text-align: center;
+  line-height: 90rpx;
+  box-sizing: border-box;
+  color: #999;
+}
+
+.infos .item:nth-child(1) {
+  border-right: 1px solid #e5e5e5;
+}
+
+.con {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding-left: 40rpx;
+  box-sizing: border-box;
+  margin-top: 30rpx;
+}
+
+.me-other {
+  width: 100%;
+  display: flex;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.me-other .item {
+  flex: 0.3;
+  text-align: left;
+}
+.me-other .item:nth-child(3){
+  text-align: center;
+}
+
+.me-other:nth-child(3) {
+  border: 0;
+}
+
+.me-other .item:nth-child(2) {
+  flex: 3;
+}
+.me-other .item:nth-child(1){
+  display: flex;
+  align-items: center;
+    height: 90rpx;
+}
+.me-other .item image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.me-other .item image.row{
+  width:8px;height:13px;
+}
+.me-other .item text{
+  font-size: 32rpx;
+  color:#666;
+}
+.opinions{
+  border:0;
+}

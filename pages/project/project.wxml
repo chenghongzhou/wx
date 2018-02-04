@@ -1,0 +1,34 @@
+<!--项目-->
+<view style='widh:100%;overflow:hidden;'>
+<view class='projecttopbox'>
+  <view class='projecttype'>
+  全部行业
+  <image src='http://pic.iidingyun.com/file/2005/xlxx@3x.png' class='projectselect'></image>
+  </view>
+  <view class='projecttype'>全部地区
+    <image src='http://pic.iidingyun.com/file/2005/xlxx@3x.png' class='projectselect'></image>
+  </view>
+</view>
+<view class='mainnews' style='margin-top:0rpx;'>
+    <block wx:for="{{things}}" wx:key="id">
+  <view class='thingscount' bindtap='goprojectdetail'>
+    <view class='thingscttop'>
+      <image src='{{item.url}}' class='whos'></image>
+      <view class='thingswhos'>
+        <view class="whoname">{{item.name}}</view>
+        <view class="whoposition">{{item.position}} <span>|</span> {{item.company}}</view>
+        <p class="thingstime" style="right:46rpx">{{item.time}}</p>
+
+        <view class='thingstitle'>{{item.title}}</view>
+        <view class='thingsdetils'>{{item.text}}</view>
+        <view class='thingsimgbox'>
+           <image src='{{item.url}}' class='thingsimg' wx:for="{{item.imgUlr}}" wx:for-item="imgUlr" wx:key="id"></image> 
+        </view>
+      </view>
+    </view>
+    
+  </view>
+  </block>
+  </view>
+
+  </view>

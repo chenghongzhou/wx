@@ -1,0 +1,58 @@
+.follow-box {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 20rpx 0 20rpx;
+}
+
+.fl-item {
+  display: flex;
+  height: 120rpx;
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ededed;
+}
+
+.fl-item .items {
+  height: 120rpx;
+  padding-bottom: 20rpx;
+  box-sizing: border-box;
+}
+
+.fl-item .item-left {
+  flex: 1;
+}
+
+.fl-item .item-center {
+  flex: 3;
+}
+
+.item-center .name {
+  font-size: 32rpx;
+  color: #333;
+  overflow: hidden;
+}
+
+.position {
+  font-size: 26rpx;
+  color: #999;
+}
+
+.compony {
+  margin-left: 20rpx;
+  border-left:1px solid #E5E5E5;
+  padding-left: 10px;
+}
+
+.fl-item .item-right {
+  flex: 1;
+  line-height: 120rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #fa8d35;
+ }
+.item-right text{
+   border: 1px solid #fa8d35;
+   padding: 10rpx;
+   border-radius: 8rpx;
+}

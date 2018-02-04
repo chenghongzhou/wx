@@ -1,0 +1,79 @@
+<!--搜索-->
+<view style='width:100%;overflow:hidden;'>
+  <import src="../template/comment.wxml" />
+  <template is="search" />
+  <view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">
+      {{title[0]}}
+    </view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">
+      {{title[1]}}
+    </view>
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">
+      {{title[2]}}
+    </view>
+  </view>
+  <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 94}}px" bindchange="bindChange">
+    <swiper-item>
+      <!-- <slot name="first">1</slot> -->
+      <view class='mainnews' style='margin-top:0rpx;'>
+        <block wx:for="{{news}}" wx:key="id">
+          <view class='newscount'>
+            <image src='{{item.url}}' class='newsctimg'></image>
+            <view class='newsctts'>
+              <view class="newstitle">{{item.title}}</view>
+              <view class='newsctauthor'>{{item.author}}</view>
+            </view>
+            <view class='newscttime' style='right:54rpx;'>{{item.time}}</view>
+          </view>
+        </block>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <!-- <slot name="second">2</slot> -->
+      <view class='mainnews' style='margin-top:0rpx;'>
+        <block wx:for="{{things}}" wx:key="id">
+          <view class='thingscount'>
+            <view class='thingscttop'>
+              <image src='{{item.url}}' class='whos'></image>
+              <view class='thingswhos'>
+                <view class="whoname">{{item.name}}</view>
+                <view class="whoposition">{{item.position}}
+                  <span>|</span> {{item.company}}</view>
+                <p class="thingstime" style="right:46rpx">{{item.time}}</p>
+
+                <view class='thingstitle'>{{item.title}}</view>
+                <view class='thingsdetils'>{{item.text}}</view>
+                <view class='thingsimgbox'>
+                  <image src='{{item.url}}' class='thingsimg' wx:for="{{item.imgUlr}}" wx:for-item="imgUlr" wx:key="id"></image>
+                </view>
+              </view>
+            </view>
+
+          </view>
+        </block>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <!-- <slot name="third">3</slot> -->
+      <view class='mainnews' style='margin-top:0rpx;'>
+        <block wx:for="{{users}}" wx:key="id">
+          <view class='thingscount'>
+            <view class='thingscttop' style='position:relative;'>
+              <image src='{{item.url}}' class='whos'></image>
+              <view class='thingswhos' style='dispaly:flex;display:-webkit-flex;'>
+                <view>
+                  <view class="whoname">{{item.name}}</view>
+                  <view class="whoposition">{{item.position}}
+                    <span>|</span> {{item.company}}</view>
+                </view>
+                <view class='follow'>+ 关注</view>
+              </view>
+            </view>
+
+          </view>
+        </block>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

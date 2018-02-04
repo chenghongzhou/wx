@@ -1,0 +1,13 @@
+<view class='ssbox'>
+  <view class='searchmianbox'>
+    <input value='' name='' class='searchmain' type='text' placeholder='搜索' />
+    <image src='http://pic.iidingyun.com/file/2005/ssicon @3x.png' class='sscion'></image>
+    <button class='reachto' bindtap='searchgo'>搜索</button>
+  </view>
+  <view class='reachts'>您可以搜素</view>
+  <view class='reachmore'>
+    <view class='reachlist'>感兴趣的观点</view>
+    <view class='reachlist'>要闻</view>
+    <view class='reachlist'>想结实的人</view>
+  </view>
+</view>

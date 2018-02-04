@@ -1,0 +1,104 @@
+<!--人脉圈-->
+<view class="container">
+  <view class='topsearch'>
+    <view class='search' bindtap='boxshow'>
+      <view class='seachcenter'>
+        <image src='../../static/img/ss.png'></image>搜索</view>
+    </view>
+  </view>
+  <view class='mainnews'>
+    <view class='miannewstitle'>
+      <i class="newcion">{{}}</i>人脉拓展
+      <p class="mainnewsmore" bindtap="goto_fj">更多
+        <i class="mainnewsmorecion"></i>
+      </p>
+    </view>
+  </view>
+  <view class='c-b'>
+    <view wx:for="{{arrlist}}" wx:key="{{index}}" bindtap="goto_fj" class='c-b1'>
+      <image src='{{item.url}}'></image>
+      <text>{{item.txt}}</text>
+    </view>
+  </view>
+  <view class='c-b2'>
+    <view wx:for="{{arrlists}}" wx:key="{{index}}" data-index="{{index}}" bindtap='goto_other' class='c-b2-arr'>
+      <view class='c-b2-big'>
+        <view class='c-b2-l'>{{item.label}}</view>
+        <view class='c-b2-r'>
+          <view>{{item.title}}</view>
+          <view>
+            <i class="ico-a"></i>
+            <text class='c-b2-t'>{{item.address}}</text>
+            <i class="ico-b"></i>
+            <text class='c-b2-t'>{{item.time}}{{item.times}}</text>
+            <i class="ico-c"></i>
+            <text class='c-b2-t'>{{item.num}}</text>
+            <i class="ico-d"></i>
+            <text class='c-b2-t'>{{item.people}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='mainnews' style='margin-top:30rpx'>
+    <view class='miannewstitle'>
+      <i class="thingscion"></i>推荐关注
+      <p class="mainnewsmore" bindtap="projects">更多
+        <i class="mainnewsmorecion"></i>
+      </p>
+    </view>
+    <view class='f-b'>
+      <view class='f-b-box' wx:for="{{list}}" wx:key="{{index}}">
+        <view class='f-b-d'>
+          <view style='text-align:center' bindtap='goPersonal'>
+            <image src='{{item.url}}'></image>
+            <view class='f-b-p1'>{{item.name}}</view>
+            <view class='f-b-p2'>{{item.title}}</view>
+          </view>
+          <button bindtap="add">+ 关注</button>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='mainnews' style='margin-top:30rpx'>
+    <block wx:for="{{things}}" wx:key="{{index}}">
+      <view class='thingscount'>
+        <view class='thingscttop'>
+          <image src='{{item.url}}' class='whos' bindtap='goPersonal'></image>
+          <view class='thingswhos' bindtap='goProjectDetail'>
+            <view class="whonames">{{item.name}}</view>
+            <view class="whopositions">{{item.position}}
+              <span>|</span> {{item.company}}</view>
+            <p class="thingstimes">{{item.time}}</p>
+            <view class='thingsdetilss'>{{item.text}}</view>
+            <view class='thingsimgbox'>
+              <image src='{{item.url}}' class='thingsimg' wx:for="{{item.imgUlr}}" wx:for-item="imgUlr" wx:key="id"></image>
+            </view>
+            <view class='b-num'>
+              <i class="ico-b2"></i>
+              <text class='c-b2-t'>{{item.num1}}</text>
+              <i class="ico-a1"></i>
+              <text class='c-b2-t'>{{item.num2}}</text>
+            </view>
+          </view>
+        </view>
+
+      </view>
+    </block>
+  </view>
+  <import src="../template/comment.wxml" />
+</view>
+
+<view class='ssbox {{show}}'>
+  <view class='searchmianbox'>
+    <input value='' name='' class='searchmain' type='text' placeholder='搜索' />
+    <image src='../../static/img/ss.png' class='sscion'></image>
+    <button class='reachto' bindtap='searchgo'>搜索</button>
+  </view>
+  <view class='reachts'>您可以搜素</view>
+  <view class='reachmore'>
+    <view class='reachlist'>感兴趣的观点</view>
+    <view class='reachlist'>要闻</view>
+    <view class='reachlist'>想结实的人</view>
+  </view>
+</view>

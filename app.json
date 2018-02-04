@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/news/news",
+    "pages/follow/follow",
+    "pages/newsDetails/detail",
+    "pages/search/index",
+    "pages/search/search",
+    "pages/project/project",
+    "pages/info/info",
+    "pages/me/me",
+    "pages/personCenter/personCenter",
+    "pages/friend/friend",
+    "pages/projectDetails/projectDetails",
+    "pages/viewpoint/viewpoint",
+    "pages/viewpointDetails/viewpointDetails",
+    "pages/Invitation/Invitation",
+    "pages/dinner/dinner",
+    "pages/apply/apply",
+    "pages/launch/launch"    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#4B92DC",
+    "navigationBarTitleText": "工商联",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "selectedColor": "#4B92DC",
+    "color": "#999999",
+    "list": [
+      {
+        "selectedIconPath": "/static/img/index3t.png",
+        "iconPath": "/static/img/index3.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "/static/img/pc3t.png",
+        "iconPath": "/static/img/pc3.png",
+        "pagePath": "pages/friend/friend",
+        "text": "人脉圈"
+      },
+      {
+        "selectedIconPath": "/static/img/sendto.png",
+        "iconPath": "/static/img/sendto.png",
+        "pagePath": "pages/logs/logs",
+        "text": ""
+      },
+      {
+        "selectedIconPath": "/static/img/informationt.png",
+        "iconPath": "/static/img/information.png",
+        "pagePath": "pages/info/info",
+        "text": "消息"
+      },
+      {
+        "selectedIconPath": "/static/img/met.png",
+        "iconPath": "/static/img/me.png",
+        "pagePath": "pages/me/me",
+        "text": "我"
+      }
+    ]
+  }
+}

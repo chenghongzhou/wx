@@ -1,0 +1,93 @@
+<!--我-->
+<view>
+  <view class='card'>
+    <image src='http://pic.iidingyun.com/file/2005/hyk@3x.png' mode='widthFix' ></image>
+  </view>
+
+  <!--基本信息-->
+  <view class='me-panel'>
+    <view class='me-header'>
+      <view class='mh'>
+        <image src='/static/img/1.gif' class='img'></image>
+      </view>
+      <view class='mh mh-center' bindtap='goto_personCenter'>
+        <view class='name'>张三</view>
+        <view class='state'>
+          <view class='dottad'></view>
+          <text>在线</text>
+        </view>
+      </view>
+      <view class='mh mh-right'>
+        <image src='/static/img/row.png' style="width:8px;height:13px;"></image>
+      </view>
+    </view>
+    <view class='infos'>
+      <view class='item info-fl' bindtap='goto_gz'>
+        关注
+        <text>18</text>
+      </view>
+      <view class='item info-fx'>
+        粉丝
+        <text>18</text>
+      </view>
+    </view>
+  </view>
+
+  <!--other-->
+  <view class='con'>
+
+    <view class='me-other'>
+      <view class='item'>
+        <image src='http://pic.iidingyun.com/file/2005/xm@3x.png'></image>
+      <!-- <label>
+      <i><i/>
+      <text></text>
+      </label> -->
+      </view>
+      <view class='item'>
+        <text>项目</text>
+      </view>
+      <view class='item'>
+        <image src='/static/img/row.png' class='row'></image>
+      </view>
+    </view>
+
+    <view class='me-other' bindtap='goto_fj'>
+      <view class='item'>
+        <image src='http://pic.iidingyun.com/file/2005/j@3x.png'></image>
+      </view>
+      <view class='item'>
+        <text>约局</text>
+      </view>
+      <view class='item'>
+        <image src='/static/img/row.png' class='row'></image>
+      </view>
+    </view>
+
+    <view class='me-other' bindtap='goto_gd'>
+      <view class='item'>
+        <image src='/static/img/gd.png'></image>
+      </view>
+      <view class='item'>
+        <text>观点</text>
+      </view>
+      <view class='item'>
+        <image src='/static/img/row.png' class='row'></image>
+      </view>
+    </view>
+  </view>
+
+  <view class='con'>
+    <view class='me-other opinions'>
+      <view class='item'>
+        <image src='http://pic.iidingyun.com/file/2005/yjfk@3x.png'></image>
+      </view>
+      <view class='item'>
+        <text>意见反馈</text>
+      </view>
+      <view class='item'>
+        <image src='/static/img/row.png' class='row'></image>
+      </view>
+    </view>
+  </view>
+</view>

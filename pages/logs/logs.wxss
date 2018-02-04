@@ -1,0 +1,53 @@
+.fb {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+ opacity: 0.3;
+ background: #fff; 
+ z-index: -1; 
+}
+.fb-box{
+  width: 100%;
+position: absolute;
+bottom: 0;
+}
+.c-b{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 240rpx;
+  align-items: center;
+  /* background: #F7F7FA; */
+  position: relative;
+  z-index: 2;
+}
+.c-b1 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+.c-b1 image {
+  width: 112rpx;
+  height: 112rpx;
+
+}
+.c-b1 text {
+font-size: 28rpx;
+color: #666666;
+letter-spacing: 0;
+line-height: 28rpx;
+margin-top: 24rpx;
+}
+.close{
+ border-top: 1px solid #E5E5E5;
+  height: 100rpx;
+display: flex;
+justify-content: center;  
+align-items: center;
+}
+.close image {
+  width: 36rpx;
+  height: 36rpx;
+}

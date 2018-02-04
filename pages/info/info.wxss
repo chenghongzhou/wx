@@ -1,0 +1,136 @@
+view {
+  box-sizing: border-box;
+}
+
+.n-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+
+.b-t {
+  display: flex;
+  height: 148rpx;
+  margin-left: 30rpx;
+  border-bottom: 1px solid #e5e5e5;
+  padding-right: 24rpx;
+  justify-content: space-between;
+}
+
+.b-t-l {
+  display: inline-flex;
+  align-items: center;
+  height: 148rpx;
+}
+
+.b-t-l image {
+  width: 88rpx;
+  height: 88rpx;
+}
+
+.b-t-c {
+  margin-left: 12px;
+  display: inline-flex;
+  align-items: center;
+  height: 74px;
+  width: 70%;
+
+}
+
+.b-t-c view {
+  height: 44px;
+  display: inline-flex;
+  flex-direction: column;
+ margin-right: 20px;
+   width: 80%;
+}
+
+.b-t-c view text:first-child {
+  font-size: 32rpx;
+  color: #333;
+  letter-spacing: 0;
+  line-height: 55rpx;
+}
+
+.b-t-c view text:last-child {
+  font-size: 26rpx;
+  color: #999;
+  letter-spacing: 0;
+  line-height: 35rpx;
+   width: 100%;
+       overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; 
+}
+
+.b-t-r {
+  display: inline-flex;
+  align-items: center;
+  height: 74px;
+}
+
+.b-t-r text:first-child {
+  display: inline-block;
+  height: 44px;
+  font-size: 26rpx;
+  color: #c7c7cc;
+  letter-spacing: 0;
+}
+
+.home-view3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-view4 {
+  display: flex;
+  align-items: center;
+}
+
+.home-image1 {
+  height: 200px;
+}
+
+.home-image-heart {
+  width: 30px;
+  height: 30px;
+}
+
+.home-text1 {
+  text-align: left;
+  line-height: 25px;
+  margin-top: 6px;
+  margin-right: 6px;
+  color: gray;
+}
+
+.home-text-heart {
+  width: 22px;
+  height: 22px;
+  margin-left: 10px;
+  border-radius: 20%;
+  pad: 5px;
+  text-align: center;
+}
+
+.home-text-time {
+  text-align: center;
+  margin-right: 20px;
+  padding-top: 5px;
+  color: gray;
+}
+
+.home-view-line {
+  width: 100%;
+  height: 6px;
+  margin-top: 5px;
+  background-color: gainsboro;
+}
+
+.bgColor {
+  background-color: lightblue;
+  opacity: 0.6;
+}
